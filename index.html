@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HogarSolutions</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">HogarSolutions</div>
+                <ul class="nav-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="bienvenida">
+            <h1>Bienvenidos a HogarSolutions</h1>
+            <p>donde tenemos todas las soluciones para tu hogar.</p>
+
+            <a class="link-button" href="#formulario">SERVICIO COMÚN</a>
+            <a class="link-button" href="">SERVICIO URGENTE</a>
+        </section>
+        <section class="form-container">
+            <div class="form-container-encabezado">
+                <h1>¿Qué servicio necesitas?</h1>
+                <p><em>Elige un servicio y uno de nuestros técnicos se pondrá en contacto contigo lo antes posible...</em></p>
+            </div>
+            <div class="form-group" id="formulario">
+                <form>
+                    <label for="text">Tipo de servicio:</label>
+                    <select name="servicio" id="servicio" required>
+                        <option value="" disabled selected>Seleccionar</option>
+                        <option value="">Persianas</option>
+                        <option value="">Fontanería</option>
+                        <option value="">Electricidad</option>
+                        <option value="">Aires acondicionados / Frigoristas</option>
+                        <option value="">Pinturas</option>
+                        <option value="">Toldos</option>
+                        <option value="">Otros servicios</option>
+                    </select>
+                    <label for="codigo-postal">Selecciona tu Código Postal:</label>
+                    <select name="codigo_postal" id="codigo-postal" required>
+                        <option value="" disabled selected>Elige un código postal...</option>
+                        <option value="03001">03001 - Centro / Casco Antiguo</option>
+                        <option value="03002">03002 - Centro / Zona Puerto</option>
+                        <option value="03003">03003 - Ensanche / Diputación</option>
+                        <option value="03004">03004 - Mercado / San Blas</option>
+                        <option value="03005">03005 - San Blas / Santo Domingo</option>
+                        <option value="03006">03006 - Florida Alta / Ciudad de Asís</option>
+                        <option value="03007">03007 - Benalúa / La Florida</option>
+                        <option value="03008">03008 - Babel / Gran Vía Sur</option>
+                        <option value="03009">03009 - Los Ángeles / Tómbola</option>
+                        <option value="03010">03010 - Carolinas Altas / Altozano</option>
+                        <option value="03011">03011 - San Agustín / Ciudad Universitaria / Rabasa</option>
+                        <option value="03012">03012 - Carolinas Bajas / Pla del Bon Repós</option>
+                        <option value="03013">03013 - El Pla / Vistahermosa</option>
+                        <option value="03014">03014 - Juan XXIII / Segundo Sector</option>
+                        <option value="03015">03015 - Albufereta / Condomina</option>
+                        <option value="03016">03016 - Vistahermosa / Santa Faz</option>
+                        <option value="03540">03540 - Playa de San Juan</option>
+                    </select>
+                    <label for="nombre" required>Nombres:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="telefono" required>Número de telefono:</label>
+                    <input type="text" id="telefono" name="telefono" placeholder="Ej: +34 600 000 000" pattern="[0-9]{9}" required>
+                    <label for="direccion" required>Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" autocomplete="Avenida Alfonso El Sabio, 20, Escalera 2, Planta 4." required>
+                    <button type="submit" class="btn-submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>HogarSolutions. Marca registrada. Alicante, España.</p>
+    </footer>
+</body>
+</html>
